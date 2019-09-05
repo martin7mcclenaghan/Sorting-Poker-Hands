@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
+    // Challenge from Code Wars can be found here https://www.codewars.com/kata/sortable-poker-hands
 
     public static void main(String[] args) {
 
