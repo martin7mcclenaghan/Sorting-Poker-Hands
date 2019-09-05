@@ -1,3 +1,5 @@
+package learning.example;
+
 import java.util.*;
 
 public class PokerHand implements Comparable<PokerHand>{
