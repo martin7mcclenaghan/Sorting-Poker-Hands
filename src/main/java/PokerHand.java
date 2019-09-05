@@ -19,6 +19,7 @@ public class PokerHand implements Comparable<PokerHand>{
     }
 
     // == fields ==
+    private String userDescription;
     private String description;
     private Strength classification;
     private int value;
@@ -29,6 +30,7 @@ public class PokerHand implements Comparable<PokerHand>{
 
     // == constructor ==
     public PokerHand(String userDescription) {
+        this.userDescription = userDescription;
         this.description = faceToNumber(userDescription);
         this.sortedCardValues = listSortedCardValues(this.description);
         this.uniqueTotals = countUniqueTotals(this.sortedCardValues);
@@ -93,6 +95,16 @@ public class PokerHand implements Comparable<PokerHand>{
         } else {
             return comparePair(this.uniqueTotals, hand.uniqueTotals);
         }
+    }
+
+    // Getter for description that is presented to User.
+    public String getUserDescription() {
+        return userDescription;
+    }
+
+    // Getter for Strength of hand that can be understood by User.
+    public Strength getClassification() {
+        return classification;
     }
 
     // == private methods ==
