@@ -53,10 +53,10 @@ public class PokerHandSortingTest {
         orderedList.add(new PokerHand("AC QH AS AD AH")); // Four of a Kind
         orderedList.add(new PokerHand("QH QC QS 3H 3D")); // Full House
         orderedList.add(new PokerHand("QD QH QH 2C 2D")); // Full House
-        orderedList.add(new PokerHand("4C 5C 9C 8C KC")); // Flush
-        orderedList.add(new PokerHand("8C 9C 5C 3C TC")); // Flush
+        orderedList.add(new PokerHand("5C 7C 9C 4C KC")); // Flush
+        orderedList.add(new PokerHand("8D 9D 5D 3D TD")); // Flush
         orderedList.add(new PokerHand("JS QS 9H TS KH")); // Straight
-        orderedList.add(new PokerHand("3C 5C 4C 2C 6H")); // Straight
+        orderedList.add(new PokerHand("4C 6C 5C 3C 7H")); // Straight
         orderedList.add(new PokerHand("AC KH QH AH AS")); // Three of a Kind
         orderedList.add(new PokerHand("5C 5S 3S 7H 5S")); // Three of a Kind
         orderedList.add(new PokerHand("AS 3C KH AD KC")); // Two Pair
