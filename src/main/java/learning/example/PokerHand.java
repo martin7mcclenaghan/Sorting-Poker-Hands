@@ -44,6 +44,8 @@ public class PokerHand implements Comparable<PokerHand>{
     }
 
     // == public methods ==
+
+    // method to return a sorted list of poker hands with the strongest appearing first (descending order of strength)
     @Override
     public int compareTo(PokerHand hand) {
         if(this.compareWith(hand) == Result.WIN){
