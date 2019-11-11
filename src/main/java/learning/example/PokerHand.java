@@ -253,6 +253,12 @@ public class PokerHand implements Comparable<PokerHand>{
 
     //returns true if the hand is a straight - aces are counted as 1 or 14 depending upon situation
     private  boolean isStraight (List<Integer> cardValues){
+        //straights must have 5 unique numeric values
+        Set<Integer> noDupe = new HashSet<>(cardValues);
+        if (noDupe.size() < 5){
+            return false;
+        }
+        
         List<Integer> lowStraight = new ArrayList<>();
         lowStraight.add(14);
         lowStraight.add(2);
